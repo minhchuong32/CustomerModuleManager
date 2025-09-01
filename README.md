@@ -23,37 +23,37 @@ Chức năng chính:
 ---
 
 ## 3. Cấu trúc thư mục dự án
-
 CustomerModuleWinForms/
 │
-├─ Program.cs
-├─ App.config
+├─ Program.cs                 # Điểm vào (entry point) của ứng dụng WinForms
+├─ App.config                 # File cấu hình, chứa connection string tới SQL Server
 │
-├─ Models/
-│ ├─ Customer.cs
-│ ├─ CustomerAccount.cs
-│ └─ LoyaltyTransaction.cs
+├─ Models/                    # Chứa các lớp đại diện dữ liệu (DTO/Entity)
+│ ├─ Customer.cs              # Lớp Customer, lưu thông tin khách hàng
+│ ├─ CustomerAccount.cs       # Lớp CustomerAccount, lưu thông tin tài khoản khách
+│ └─ LoyaltyTransaction.cs    # Lớp LoyaltyTransaction, lưu thông tin giao dịch tích/trừ điểm
 │
-├─ DAL/
-│ ├─ DbHelper.cs
-│ ├─ CustomerDAL.cs
-│ ├─ CustomerAccountDAL.cs
-│ └─ LoyaltyTransactionDAL.cs
+├─ DAL/                       # Data Access Layer – truy cập trực tiếp database
+│ ├─ DbHelper.cs              # Hỗ trợ kết nối và thực thi SQL
+│ ├─ CustomerDAL.cs           # Thao tác CRUD bảng Customer
+│ ├─ CustomerAccountDAL.cs    # Thao tác CRUD bảng CustomerAccount
+│ └─ LoyaltyTransactionDAL.cs # Thao tác CRUD bảng LoyaltyTransaction
 │
-├─ BLL/
-│ ├─ CustomerBLL.cs
-│ ├─ CustomerAccountBLL.cs
-│ └─ LoyaltyTransactionBLL.cs
+├─ BLL/                       # Business Logic Layer – xử lý nghiệp vụ
+│ ├─ CustomerBLL.cs           # Xử lý nghiệp vụ liên quan Customer
+│ ├─ CustomerAccountBLL.cs    # Xử lý nghiệp vụ liên quan CustomerAccount
+│ └─ LoyaltyTransactionBLL.cs # Xử lý nghiệp vụ liên quan LoyaltyTransaction
 │
-├─ Forms/
-│ ├─ MainForm.cs
-│ ├─ CustomersForm.cs
-│ ├─ CustomerAccountsForm.cs
-│ ├─ LoyaltyTransactionsForm.cs
-│ └─ LoginForm.cs
+├─ Forms/                     # Giao diện WinForms
+│ ├─ MainForm.cs              # Form chính, menu điều hướng các chức năng
+│ ├─ CustomersForm.cs         # Form quản lý khách hàng (CRUD)
+│ ├─ CustomerAccountsForm.cs  # Form quản lý tài khoản khách
+│ ├─ LoyaltyTransactionsForm.cs # Form quản lý giao dịch tích/trừ điểm
+│ └─ LoginForm.cs             # Form đăng nhập khách hàng
 │
-└─ Resources/
-└─ Icons, Images...
+└─ Resources/                 # Chứa các tài nguyên (icon, image, file khác)
+   └─ Icons, Images...
+
 
 
 ---
