@@ -1,0 +1,45 @@
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build Folders
+bin/
+obj/
+
+# SQL Server LocalDB / Database Files
+*.mdf
+*.ldf
+*.ndf
+*.bak
+
+# App Config sensitive
+app.config
+*.config
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+.nuget/
+
+# Rider IDE
+.idea/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Logs
+*.log
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+*.DS_Store
+
+# Publish
+publish/
+*.publish.xml
